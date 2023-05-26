@@ -3,7 +3,7 @@
 
 Get details about a specific session
 
-**URL** : `https://api.eliteportal.co.uk/v1/external/getSessionById`
+**URL** : `https://api.eliteportal.co.ukexternal/v1/getSessionById`
 
 **Method** : `GET`
 
