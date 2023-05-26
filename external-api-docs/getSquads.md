@@ -3,7 +3,7 @@
 
 Get the details of all squads
 
-**URL** : `https://api.eliteportal.co.uk/external/getSquads`
+**URL** : `https://api.eliteportal.co.uk/external/v1/getSquads`
 
 **Method** : `GET`
 
