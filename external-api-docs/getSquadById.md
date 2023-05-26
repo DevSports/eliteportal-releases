@@ -2,7 +2,7 @@
 
 Get details of squad of given ID
 
-**URL** : `https://api.eliteportal.co.uk/external/getSquadById`
+**URL** : `https://api.eliteportal.co.uk/external/v1/getSquadById`
 
 **Method** : `GET`
 
