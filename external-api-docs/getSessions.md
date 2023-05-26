@@ -3,7 +3,7 @@
 
 Get details about created sessions
 
-**URL** : `https://api.eliteportal.co.uk/external/getSessions`
+**URL** : `https://api.eliteportal.co.uk/external/v1/getSessions`
 
 **Method** : `GET`
 
