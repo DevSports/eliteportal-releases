@@ -12,7 +12,7 @@ Create player records in the player pool. Assigning them one or multiple squads
 ## Request Query Parameters
 
 ## Request Body
-```json
+```javascript
 {
 "players": [
   "playerType": string; // "INTERNAL" | "EXTERNAL"
