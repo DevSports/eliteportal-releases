@@ -15,8 +15,17 @@ Creates an invitation to signup to the software. The user will be sent an email 
 N/A
 
 ## Request Body
-### Required fields
 
+    "users": [{
+       "email": "string",
+       "firstName": "string",
+       "lastName": "string",
+       "licence": "string",
+       "expiry": "string",
+       "permissionGroups": []
+     }]
+
+### Required fields
  -  **email**: string - Valid user email address 
  -  **licence**: string - Licence type, accepted values are "FULL" and "CANDIDATE"
  -  **expiry**: string - ISO date timestamp of user account expiry date, e.g. 2023-06-24
