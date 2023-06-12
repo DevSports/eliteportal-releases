@@ -17,15 +17,15 @@ N/A
 ## Request Body
 ```json
 {
-    "users":
+ "users":
  [
    {
-       "email": "string",
-       "firstName": "string",
-       "lastName": "string",
-       "licence": "string",
-       "expiry": "string",
-       "permissionGroups": []
+    "email": "string",
+    "firstName": "string",
+    "lastName": "string",
+    "licence": "string",
+    "expiry": "string",
+    "permissionGroups": []
    }
  ]
 }
