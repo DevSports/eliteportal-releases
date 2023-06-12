@@ -25,9 +25,41 @@ N/A
 ### Optional fields
  -  **firstName**: string - First Name
  -  **lastName**: string - Last Name
+
+## Example Request
+
+```json
+{
+"users": [{
+  "email": "success@devsports.co.uk",
+  "firstName": "Test",
+  "lastName": "User",
+  "licence": "FULL",
+  "expiry": "2023-09-27",
+  "permissionGroups": []
+},
+{
+  "email": "fail@devsports.co.uk",
+  "firstName": "Test",
+  "lastName": "User",
+  "licence": "FULL",
+  "expiry": "2023-09-27",
+  "permissionGroups": []
+},
+{
+  "email": "fail2@devsports.co.uk",
+  "firstName": "Test",
+  "lastName": "User",
+  "licence": "FULL",
+  "expiry": "2023-09-27",
+  "permissionGroups": []
+}]
+}
+
 ```
 
 ## Example Response
+
 ```json
 [
     {
