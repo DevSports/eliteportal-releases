@@ -15,15 +15,21 @@ Creates an invitation to signup to the software. The user will be sent an email 
 N/A
 
 ## Request Body
-
-    "users": [{
+```json
+{
+    "users":
+ [
+   {
        "email": "string",
        "firstName": "string",
        "lastName": "string",
        "licence": "string",
        "expiry": "string",
        "permissionGroups": []
-     }]
+   }
+ ]
+}
+```
 
 ### Required fields
  -  **email**: string - Valid user email address 
