@@ -15,18 +15,16 @@ Creates an invitation to signup to the software. The user will be sent an email 
 N/A
 
 ## Request Body
+# Required fields
 
-```json
-{
-   users: [{
-	  email: string
-	  firstName: string, //Optional
-	  lastName: string,
-	  licence: "FULL" | "CANDIDATE",
-	  expiry: string, //ISO timestamp
-	  permissionGroups: string[], //Course codes
-	 }]
-}
+ -  **email**: string - Valid user email address 
+ -  **licence**: string - Licence type, accepted values are "FULL" and "CANDIDATE"
+ -  **expiry**: string - ISO date timestamp of user account expiry date, e.g. 2023-06-24
+ -  **permissionGroups**: string[] - Array of Permission Group IDs. Empty array allowed
+
+# Optional fields
+ -  **firstName**: string - First Name
+ -  **lastName**: string - Last Name
 ```
 
 ## Example Response
