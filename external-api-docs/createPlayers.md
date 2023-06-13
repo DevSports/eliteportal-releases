@@ -273,31 +273,35 @@ N/A
 ## Example request
 ```json
 {
- "players": 
- [
-  {
-   "lastName": "Anderson",
-   "number": 1,
-   "positionArea": "DEF",
-   "primaryPosition": "RWB",
-   "secondaryPositions": 
-    [
-     "GK",
-      "CB"
-    ],
-   "dob": "2022-05-10",
-   "squadId": "",
-   "nationalTeam": "England",
-   "height": 180,
-   "weight": 80
-  }   
- ]
+    "players": [
+        {
+            "lastName": "Man",
+            "number": 1,
+            "positionArea": "DEF",
+            "primaryPosition": "RWB",
+            "secondaryPositions": [
+                 "GK",
+                 "CB"
+            ],
+            "dob": "2022-05-10",
+            "squadIds": ["5d5f4c6e-1312-441c-8ea1-d3362f0d628f", "fcb21a7e-3613-4565-9bde-990170a6d566"],
+            "nationalTeam": "England",
+            "height": 180,
+            "weight": 80
+        }   
+    ]
 }
 ```
 
 ## Example Response
 ```json
-"Create Players Success"
+[
+    {
+        "success": true,
+        "playerId": "b7a1fc43-bf68-4402-b5a6-019ed6106323",
+        "message": "Player create success"
+    }
+]
 ```
 
 ## Notes
