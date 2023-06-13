@@ -1,6 +1,6 @@
-# Create Players (Under construction)
+# Create Players 
 
-Create player records in the player pool, can assign them to a squad  
+Create player records in the player pool, can assign them to squads
 
 **URL** : `https://api.eliteportal.co.uk/external/v1/createPlayers`
 
@@ -26,7 +26,7 @@ N/A
    "primaryPosition": string,
    "secondaryPositions": string[],
    "dob": string,
-   "squadId": string,
+   "squadIds": string[],
    "footedness": string,
    "nationalTeam": string,
    "height": number,
@@ -49,7 +49,7 @@ N/A
 ### Optional Fields
 - **firstName** - Player's first name
 - **dob** - Player's date of birth, in ISO date string format e.g. 1991-01-25
-- **squadId** - Squad UUID if adding player to an existing squad
+- **squadIds** - Array of Squad UUIDs to assign the new player to 
 - **footedness** - Player's footedness, accepted values are "Right", "Left, "Both"
 - **height** - Player's height in cm
 - **weight** - Player's weight in kg
