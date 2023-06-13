@@ -1,6 +1,6 @@
 # Delete Players
 
-Queue the deletetion of existing players, removing their custom tab data and removing them from squads.
+Queue the deletion of existing players, removing their custom tab data and removing them from squads.
 
 > **Warning**
 This is a destructive operation
