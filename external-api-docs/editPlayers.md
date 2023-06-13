@@ -2,7 +2,7 @@
 
 Edit individual fields for existing player records
 
-**URL** : `https://api.eliteportal.co.uk/external/v1/createPlayers`
+**URL** : `https://api.eliteportal.co.uk/external/v1/editPlayers`
 
 **Method** : `POST`
 
