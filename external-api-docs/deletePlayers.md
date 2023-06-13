@@ -6,7 +6,7 @@ Queue the deletetion of existing players, removing their custom tab data and rem
 This is a destructive operation
 
 
-**URL** : `https://api.eliteportal.co.uk/external/v1/assignPlayers`
+**URL** : `https://api.eliteportal.co.uk/external/v1/deletePlayers`
 
 **Method** : `POST`
 
