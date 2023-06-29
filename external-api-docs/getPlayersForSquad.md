@@ -12,7 +12,7 @@ Returns array of players that are assigned to given squad
 
 ## Request Query Parameters
 
-- **id** - ID of squad
+- **id** - ID or Custom ID of the squad
 
 ## Request Body
 
