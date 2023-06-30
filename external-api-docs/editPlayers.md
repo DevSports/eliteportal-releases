@@ -20,40 +20,45 @@ N/A
  [
   {
    "playerId": string,
-   "firstName": string,
-   "lastName": string,
-   "number": number,
-   "positionArea": string,
-   "primaryPosition": string,
-   "secondaryPositions": string[],
-   "dob": string,
-   "footedness": string,
-   "nationalTeam": string,
-   "height": number,
-   "weight": number,
-   "image": string
+   "data":
+   {
+     "customId": string,
+     "firstName": string,
+     "lastName": string,
+     "number": number,
+     "positionArea": string,
+     "primaryPosition": string,
+     "secondaryPositions": string[],
+     "dob": string,
+     "footedness": string,
+     "nationalTeam": string,
+     "height": number,
+     "weight": number,
+     "image": string
+   }
   }
  ]
 }
 ```
+### Players array
+  ### Required Fields
+  - **playerId** - UUID or customId of the player to edit 
+  - **data**
+     ### Optional Fields
+     - **customId** - Update this player's customId
+     - **firstName** - Player's first name
+     - **lastName** - Player's last name
+     - **dob** - Player's date of birth, in ISO date string format e.g. 1991-01-25
+     - **footedness** - Player's footedness, accepted values are "Right", "Left, "Both"
+     - **height** - Player's height in cm
+     - **weight** - Player's weight in kg
+     - **image** - URL pointing to the player's image. Must be externally accessible
+     - **number** - Player number
+     - **positionArea** - Preferred position area of the player, accepted values are "GK", "DEF", "MID", "FWD".
+     - **primaryPosition** - Player's primary position, accepted values are "GK", "CB", "RWB", "RB", "LB", "LWB", "CDM", "CM", "CAM", "RM", "LM", "RW", "LW", "CF", "ST"
+     - **secondaryPositions** - Array of player's secondary positions, accepted values are "GK", "CB", "RWB", "RB", "LB", "LWB", "CDM", "CM", "CAM", "RM", "LM", "RW", "LW", "CF", "ST"
+     - **nationalTeam** - Player's national team, please pick one from the country list
 
-### Required Fields
-- **playerId** - UUID of the player to edit 
-
-
-### Optional Fields
-- **firstName** - Player's first name
-- **lastName** - Player's last name
-- **dob** - Player's date of birth, in ISO date string format e.g. 1991-01-25
-- **footedness** - Player's footedness, accepted values are "Right", "Left, "Both"
-- **height** - Player's height in cm
-- **weight** - Player's weight in kg
-- **image** - URL pointing to the player's image. Must be externally accessible
-- **number** - Player number
-- **positionArea** - Preferred position area of the player, accepted values are "GK", "DEF", "MID", "FWD".
-- **primaryPosition** - Player's primary position, accepted values are "GK", "CB", "RWB", "RB", "LB", "LWB", "CDM", "CM", "CAM", "RM", "LM", "RW", "LW", "CF", "ST"
-- **secondaryPositions** - Array of player's secondary positions, accepted values are "GK", "CB", "RWB", "RB", "LB", "LWB", "CDM", "CM", "CAM", "RM", "LM", "RW", "LW", "CF", "ST"
-- **nationalTeam** - Player's national team, please pick one from the country list
 
 ## Accepted countries
       `Brazil`,
@@ -273,27 +278,27 @@ N/A
 ## Example request
 ```json
 {
-    "players": [
-        {
-            "playerId": "a7c03e0e-9d95-4b9b-900f-9ec99b9b9268",
+    "players":
+   [
+    {
+        "playerId": "player-1",
+        "data": {
+            "customId": "player-1",
             "firstName": "Test",
             "lastName": "Player",
             "number": 1,
             "positionArea": "DEF",
-            "primaryPosition": "RWB",
+            "primaryPosition": "RB",
             "secondaryPositions": [
-                 "GK",
-                 "CB",
-                 "LWB"
+                "GK",
+                "CB",
+                "LWB"
             ],
             "height": 185,
             "weight": 90
-        },
-        {
-            "playerId": "4b2b2e8e-2159-41b5-8810-1d21e0cc1254",
-            "primaryPosition": "GK"
         }
-    ]
+    }
+   ]
 }
 ```
 
@@ -301,13 +306,10 @@ N/A
 ```json
 [
     {
-        "playerId": "a7c03e0e-9d95-4b9b-900f-9ec99b9b9268",
+        "playerId": "137b9525-fac0-484e-90fe-2074649888f0",
         "success": true,
-        "message": "Player edit success"
-    },
-    {
-        "playerId": "4b2b2e8e-2159-41b5-8810-1d21e0cc1254",
-        "success": true,
+        "customId": "player-1",
+        "name": "Test Player",
         "message": "Player edit success"
     }
 ]

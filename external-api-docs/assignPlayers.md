@@ -25,8 +25,8 @@ N/A
 ```
 
 ### Required Fields
-- **playerId** UUID of the player to assign
-- **squadId** UUID of the squad
+- **playerId** UUID or customId of the player to assign
+- **squadId** UUID or customId of the squad
 - **type** Accepted values: "Add" or "Remove"
 
 ## Example request
@@ -34,18 +34,18 @@ N/A
 {
     "players": [
         {
-            "playerId": "a7c03e0e-9d95-4b9b-900f-9ec99b9b9268",
-            "squadId": "16d7cebf-918c-4b0d-abf1-f92083b68031",
+            "playerId": "player-2",
+            "squadId": "squad-1",
             "type": "Add"
         },
-        {
-            "playerId": "a7c03e0e-9d95-4b9b-900f-9ec99b9b9268",
-            "squadId": "ea9c1c35-8558-49c7-985e-290ebc409bfd",
+           {
+            "playerId": "5f1b7911-a5a3-4812-9aa3-9a1415b1db3a",
+            "squadId": "e9abced8-7d49-40c8-9a7c-2f01583fe425",
             "type": "Add"
         },
-                {
-            "playerId": "a5cdd23d-25bb-4287-9070-c1437a007caa",
-            "squadId": "16d7cebf-918c-4b0d-abf1-f92083b68031",
+        {       
+            "playerId": "player-1",
+            "squadId": "squad-1",
             "type": "Remove"
         }
     ]
@@ -57,21 +57,27 @@ N/A
 [
     {
         "success": true,
-        "playerId": "a7c03e0e-9d95-4b9b-900f-9ec99b9b9268",
-        "squadId": "16d7cebf-918c-4b0d-abf1-f92083b68031",
+        "playerId": "5f1b7911-a5a3-4812-9aa3-9a1415b1db3a",
+        "playerName": "Default Player 2",
+        "squadId": "e9abced8-7d49-40c8-9a7c-2f01583fe425",
+        "squadName": "Squad 1",
         "message": "Player added to squad"
     },
     {
-        "success": false,
-        "playerId": "a7c03e0e-9d95-4b9b-900f-9ec99b9b9268",
-        "squadId": "ea9c1c35-8558-49c7-985e-290ebc409bfd",
-        "message": "Squad doesn't exist"
+        "success": true,
+        "playerId": "5f1b7911-a5a3-4812-9aa3-9a1415b1db3a",
+        "playerName": "Default Player 2",
+        "squadId": "e9abced8-7d49-40c8-9a7c-2f01583fe425",
+        "squadName": "Squad 1",
+        "message": "Player added to squad"
     },
     {
-        "success": false,
-        "playerId": "a5cdd23d-25bb-4287-9070-c1437a007caa",
-        "squadId": "16d7cebf-918c-4b0d-abf1-f92083b68031",
-        "message": "Player doesn't exist"
+        "success": true,
+        "playerId": "3da8e670-f541-4a80-8f05-d84f31da265f",
+        "playerName": "Default Player",
+        "squadId": "e9abced8-7d49-40c8-9a7c-2f01583fe425",
+        "squadName": "Squad 1",
+        "message": "Player removed from squad"
     }
 ]
 ```

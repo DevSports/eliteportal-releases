@@ -24,12 +24,12 @@ N/A
 ```
 
 ### Required Fields
-- **playerIds**: Array of player UUIDs to delete.
+- **playerIds**: Array of player UUIDs or customIds to delete.
 
 ## Example request
 ```json
 {
-    "playerIds": ["dee95858-86d3-4a84-854e-0b5755560081","76c15145-8b7b-4e2d-9bf9-49bbc142aa21"]
+    "playerIds": ["1eb10594-9ce1-43f9-a79a-46054d112d93", "player-2"]
 }
 ```
 
@@ -38,12 +38,17 @@ N/A
 [
     {
         "success": true,
-        "playerId": "dee95858-86d3-4a84-854e-0b5755560081",
+        "playerId": "1eb10594-9ce1-43f9-a79a-46054d112d93",
+        "customId": "player-1",
+        "name": "Default Player",
         "message": "Player delete queued"
     },
     {
-        "success": false,
-        "playerId": "76c15145-8b7b-4e2d-9bf9-49bbc142aa21",
-        "message": "Player not found"
+        "success": true,
+        "playerId": "4435fdf0-6752-464d-9844-d9e923e96e6c",
+        "customId": "player-2",
+        "name": "Default Player 2",
+        "message": "Player delete queued"
     }
 ]
+```

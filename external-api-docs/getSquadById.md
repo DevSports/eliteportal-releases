@@ -11,7 +11,7 @@ Get details of squad of given ID
 
 ## Request Query Parameters
 
- - **id** - ID of squad
+ - **id** - ID or Custom ID of the squad
 
 ## Request Body
 
@@ -19,19 +19,18 @@ N/A
 
 ## Example Response
 ```json
-[
-    {
-        "id": "cad2976a-4bf1-420f-bfb9-7dbe0ba2c20d",
-        "name": "Development Squad",
-        "squadType": "INTERNAL",
-        "image": "",
-        "deleted": false,
-        "parent": "squad_root",
-        "notes": "",
-        "createdAt": "2023-05-25T14:36:21.290Z",
-        "updatedAt": "2023-05-25T14:36:21.290Z"
-    }
-]
+{
+  "id": "cad2976a-4bf1-420f-bfb9-7dbe0ba2c20d",
+  "customId": "my-custom-id"
+  "name": "Development Squad",
+  "squadType": "INTERNAL",
+  "image": "",
+  "deleted": false,
+  "parent": "squad_root",
+  "notes": "",
+  "createdAt": "2023-05-25T14:36:21.290Z",
+  "updatedAt": "2023-05-25T14:36:21.290Z"
+}
 ```
 
 ## Notes

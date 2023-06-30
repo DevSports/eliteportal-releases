@@ -12,7 +12,7 @@ Returns array of players that are assigned to given squad
 
 ## Request Query Parameters
 
-- **id** - ID of squad
+- **id** - ID or Custom ID of the squad
 
 ## Request Body
 
@@ -23,20 +23,23 @@ N/A
 [
     {
         "squadData": {
-            "id": "582e1115-007f-4cd7-8162-a0344b332418",
+            "id": "e9abced8-7d49-40c8-9a7c-2f01583fe425",
+            "customId": "squad-1",
             "image": "",
             "parent": "squad_root",
-            "name": "Development Squad"
+            "name": "Squad 1"
         },
         "playerData": {
-            "id": "3ddc6115-5ef5-4b77-946f-98c2429cea3f",
-            "firstName": "Dev",
-            "lastName": "Test",
+            "id": "5f1b7911-a5a3-4812-9aa3-9a1415b1db3a",
+            "customId": "player-2",
+            "firstName": "Default",
+            "lastName": "Player 2",
             "image": "",
-            "number": 88,
-            "positionArea": "GK",
-            "primaryPosition": "GK",
+            "number": 1,
+            "positionArea": "DEF",
+            "primaryPosition": "RWB",
             "secondaryPositions": [
+                "GK",
                 "CB"
             ]
         },
@@ -44,21 +47,48 @@ N/A
     },
     {
         "squadData": {
-            "id": "582e1115-007f-4cd7-8162-a0344b332418",
+            "id": "e9abced8-7d49-40c8-9a7c-2f01583fe425",
+            "customId": "squad-1",
             "image": "",
             "parent": "squad_root",
-            "name": "Development Squad"
+            "name": "Squad 1"
         },
         "playerData": {
-            "id": "1ddcda15-5ef5-4b47-946f-98c4229cea3f",
-            "firstName": "Fernando",
-            "lastName": "Torres",
+            "id": "5f1b7911-a5a3-4812-9aa3-9a1415b1db3a",
+            "customId": "player-2",
+            "firstName": "Default",
+            "lastName": "Player 2",
             "image": "",
-            "number": 9,
-            "positionArea": "FWD",
-            "primaryPosition": "ST",
+            "number": 1,
+            "positionArea": "DEF",
+            "primaryPosition": "RWB",
             "secondaryPositions": [
-                "LW"
+                "GK",
+                "CB"
+            ]
+        },
+        "status": "AVAILABLE"
+    },
+    {
+        "squadData": {
+            "id": "e9abced8-7d49-40c8-9a7c-2f01583fe425",
+            "customId": "squad-1",
+            "image": "",
+            "parent": "squad_root",
+            "name": "Squad 1"
+        },
+        "playerData": {
+            "id": "50b151a6-0055-4168-a498-e5c60ac8b0d3",
+            "customId": "player-3",
+            "firstName": "Default",
+            "lastName": "Player 3",
+            "image": "",
+            "number": 1,
+            "positionArea": "DEF",
+            "primaryPosition": "RWB",
+            "secondaryPositions": [
+                "GK",
+                "CB"
             ]
         },
         "status": "AVAILABLE"

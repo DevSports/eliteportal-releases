@@ -23,6 +23,7 @@ N/A
 [
     {
         "id": "19241ede-2f26-411e-87cd-06f115bc7259",
+        "customId: "",
         "name": "API Squad",
         "squadType": "INTERNAL",
         "image": "",
@@ -34,6 +35,7 @@ N/A
     },
     {
         "id": "cad2976a-4bf1-420f-bfb9-7dbe0ba2c20d",
+        "customId: "my-custom-id",
         "name": "Development Squad",
         "squadType": "INTERNAL",
         "image": "",
