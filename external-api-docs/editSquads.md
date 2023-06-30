@@ -16,7 +16,7 @@ N/A
 
 ```json
 {
- "squads
+ "squads":
  [
   {
    "squadId": string,
