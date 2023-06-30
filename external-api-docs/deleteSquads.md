@@ -29,7 +29,7 @@ N/A
 ## Example request
 ```json
 {
-    "squadIds": ["16d7cebf-918c-4b0d-abf1-f92083b68031","96f19b4a-7466-46b1-ad1c-c7a119f48f0e"]
+    "squadIds": ["squad-1","335b46b4-fffe-462b-ab89-ac213d15f997"]
 }
 ```
 
@@ -39,12 +39,16 @@ N/A
     {
         "success": true,
         "squadId": "16d7cebf-918c-4b0d-abf1-f92083b68031",
+        "customId": "squad-1",
+        "name": "Squad 1",
         "message": "Squad delete success"
     },
     {
-        "success": false,
-        "squadId": "96f19b4a-7466-46b1-ad1c-c7a119f48f0e",
-        "message": "Squad not found"
+        "success": true,
+        "squadId": "335b46b4-fffe-462b-ab89-ac213d15f997",
+        "customId": "squad-b",
+        "name": "Squad B",
+        "message": "Squad delete success"
     }
 ]
 ```
