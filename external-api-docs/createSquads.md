@@ -48,7 +48,7 @@ N/A
 ### Optional Fields
 - **customId** - Custom ID used for queries
 - **image** - URL pointing to the squad's image. Must be externally accessible
-- **parentId** - ID of parent squad to assign to, inheriting its permissions
+- **parentId** - ID or customId of parent squad to assign to, inheriting its permissions
 - **permissionGroups** - Array of objects containing permission group IDs and access level. Accepted access level values are "READ", "WRITE", "ADMIN"
 - **users** - Array of objects containing user IDs and access level. Accepted access level values are "READ", "WRITE", "ADMIN"
 
