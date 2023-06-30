@@ -24,7 +24,7 @@ N/A
 ```
 
 ### Required Fields
-- **squadIds**: Array of squad UUIDs to delete.
+- **squadIds**: Array of squad UUIDs or customIds to delete.
 
 ## Example request
 ```json
