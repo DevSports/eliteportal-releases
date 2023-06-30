@@ -45,6 +45,7 @@ N/A
   - **playerId** - UUID or customId of the player to edit 
   - **data**
      ### Optional Fields
+     - **customId** - Update this player's customId
      - **firstName** - Player's first name
      - **lastName** - Player's last name
      - **dob** - Player's date of birth, in ISO date string format e.g. 1991-01-25
