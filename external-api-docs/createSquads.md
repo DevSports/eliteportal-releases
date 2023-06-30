@@ -77,7 +77,9 @@ N/A
 [
     {
         "success": true,
-        "squadId": "1bad0e4c-694e-427f-99e8-376b13723814",
+        "squadId": "9b04428b-0ac9-4c5d-9fbc-de59b0d7df6e",
+        "customId": "squad-1",
+        "name": "Squad 1",
         "message": "Squad create success"
     }
 ]
